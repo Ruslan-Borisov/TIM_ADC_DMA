@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\adc.o"
+".\objects\dma.o"
+".\objects\main.o"
+".\objects\rcc.o"
+".\objects\stm32f4xx_it.o"
+".\objects\tim.o"
+".\objects\usart.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\ADC_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ADC_DMA.map" -o .\Objects\ADC_DMA.axf
